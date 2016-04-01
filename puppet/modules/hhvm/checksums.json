@@ -1,0 +1,19 @@
+{
+  "CHANGELOG.md": "3ce4eb25b4cccae2b3cb4b9912fa1a99",
+  "Gemfile": "bd897020edd40a6101fd44146bb27b3f",
+  "README.md": "1305d634c6e65618155b1ea9d484e340",
+  "Rakefile": "1638b4321e5807e720b5b4f42560847d",
+  "files/hhvm.aug": "d10808a5818464561d188c56333461ff",
+  "manifests/augeas.pp": "94eecf03183a767c59e876a98c50fb30",
+  "manifests/config.pp": "d066f6f760631a050894fce26d731893",
+  "manifests/init.pp": "52ad2c5cd35a02c6fc33e249cad3ff71",
+  "manifests/package.pp": "f46343c9edaaa8bc67299ae2513d7718",
+  "manifests/pgsql.pp": "7f009fc52495e84798aab958e316bc0b",
+  "manifests/repo/apt.pp": "6123ee72a1b8892c243b93f695fd9bca",
+  "manifests/repo.pp": "edd4951a3b0fbbccc572503bdcd81f48",
+  "manifests/service.pp": "f4bcf4785bb824c933f08e1099a884c8",
+  "metadata.json": "7a539d3f1d09432c30780ed23363afd6",
+  "spec/classes/hhvm_spec.rb": "f628e3594f85bfcaf6e17c26549a4a71",
+  "spec/spec_helper.rb": "3370301e790a9ee498cab9b095f6c84c",
+  "tests/init.pp": "e1071d1ce0785febb36aeb0bcc68e6bb"
+}

@@ -1,0 +1,28 @@
+---
+
+hhvm::config::port: 9090
+hhvm::config::manage_repos: true
+hhvm::config::pgsql: false
+
+mysql::server::root_password: 'root'
+
+cassandra::params::java_package: 'openjdk-8-jre'
+
+nginx::package_name: 'nginx-naxsi'
+
+nginx::nginx_vhosts:
+  'devmachine':
+    www_root: '/srv/www/dev/'
+    listen_port: 80
+
+nginx::nginx_locations:
+  'devmachine_hhvm':
+    ensure: present
+    vhost: 'devmachine'
+    location: '~ .php$'
+    www_root: '/srv/www/dev'
+    location_cfg_append:
+      fastcgi_split_path_info: '^(.+\.php)(.*)$'
+      fastcgi_pass: '127.0.0.1:9090'
+      fastcgi_index: 'index.php'
+      include: 'fastcgi_params'
